@@ -1,13 +1,14 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import { ReactElement } from 'react';
 
-export default function About() {
+export default function About(): ReactElement {
   return (
     <div>
       Welcome to the about page. Go to the{' '}
-      <Link href="/">
+      <Link href='/'>
         <a>Home</a>
       </Link>{' '}
       page.
     </div>
-  )
+  );
 }
