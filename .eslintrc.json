@@ -28,7 +28,7 @@
     "react": { "version": "detect" }, // Tells eslint-plugin-react to automatically detect the version of React to use
     "import/resolver": { "node": { "extensions": [".js", ".jsx", ".ts", ".tsx"], "paths": ["./src"] } }
   },
-  "ignorePatterns": ["__generated__/*", "*.js"],
+  "ignorePatterns": ["__generated__/*", "*.js", "lib/*.d.ts"],
   "rules": {
     // Existing rules
     "react/react-in-jsx-scope": 0,
