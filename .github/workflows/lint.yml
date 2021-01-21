@@ -2,7 +2,9 @@ name: Automated Linting
 
 on:
   pull_request:
-    branches: [ $default-branch, feat/* ]
+    branches: 
+      - $default-branch
+      - feature/*
 
 jobs:
   run-linters:
