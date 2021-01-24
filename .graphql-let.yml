@@ -5,4 +5,4 @@ plugins:
   - typescript
   - typescript-operations
   - typescript-react-apollo
-cacheDir: __generated__
+cacheDir: src/lib/__generated__
