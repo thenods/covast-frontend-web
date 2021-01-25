@@ -1,8 +1,8 @@
 schema: '**/*.graphqls'
-schemaEntrypoint: 'lib/type-defs.graphqls'
+schemaEntrypoint: 'src/lib/type-defs.graphqls'
 documents: '**/*.graphql'
 plugins:
   - typescript
   - typescript-operations
   - typescript-react-apollo
-cacheDir: __generated__
+cacheDir: src/lib/__generated__
