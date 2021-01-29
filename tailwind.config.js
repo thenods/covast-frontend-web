@@ -17,6 +17,26 @@ module.exports = {
       },
       black: '#1c1a1a',
     },
+    fontFamily: {
+      sans: ['Apple SD Gothic Neo'],
+    },
+    fontSize: {
+      xs: '.75rem',
+      base: '1rem',
+      lg: '1.25rem',
+      xl: '2rem',
+    },
+    fontWeight: {
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+    },
+    borderRadius: {
+      DEFAULT: '0.8125rem',
+    },
+    boxShadow: {
+      DEFAULT: '0 2px 2px 0 rgba(106, 114, 136, 0.2)',
+    },
   },
   variants: {
     extend: {},
