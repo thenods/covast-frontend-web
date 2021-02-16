@@ -33,6 +33,9 @@ module.exports = {
       semibold: 600,
       bold: 700,
     },
+    borderWidth: {
+      DEFAULT: '1px',
+    },
     borderRadius: {
       DEFAULT: '0.8125rem',
     },

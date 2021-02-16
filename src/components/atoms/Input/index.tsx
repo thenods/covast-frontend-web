@@ -1,25 +1,22 @@
-import { ChangeEventHandler, memo, ReactElement, useCallback } from 'react';
+import { ChangeEventHandler, memo, ReactElement } from 'react';
 
 export interface Props {
+  readonly type?: React.InputHTMLAttributes<HTMLInputElement>['type'];
   readonly placeholder?: string;
   readonly value?: string;
-  onChange?(value: Props['value']): void;
+  readonly name?: string;
+  onChange?: ChangeEventHandler<HTMLInputElement>;
 }
 
-function Input({ placeholder, value, onChange }: Props): ReactElement {
-  const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
-    e => {
-      onChange?.(e.currentTarget.value);
-    },
-    [onChange],
-  );
-
+function Input({ type, placeholder, value, name, onChange }: Props): ReactElement {
   return (
     <input
-      className={'w-full p-4 px-5 text-base placeholder-gray rounded border shadow border-gray bg-white'}
+      className={'w-full p-4 px-5 text-black text-base placeholder-gray rounded border shadow border-gray bg-white'}
+      type={type}
       placeholder={placeholder}
       value={value}
-      onChange={handleChange}
+      name={name}
+      onChange={onChange}
     />
   );
 }
