@@ -18,7 +18,9 @@ module.exports = {
       black: '#1c1a1a',
     },
     fontFamily: {
-      sans: ['Apple SD Gothic Neo'],
+      sans: ['NanumSquareR', 'NanumSquareB', 'NanumSquareEB'],
+      bold: 'NanumSquareB',
+      'extra-bold': 'NanumSquareEB',
     },
     fontSize: {
       xs: '.75rem',
